@@ -1,0 +1,173 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Band Website</title>
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <!--Navigation bar-->
+        <ul>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#band">BAND</a></li>
+            <li><a href="#tour">TOUR</a></li>
+            <li><a href="#contacts">CONTACT</a></li>
+            <li class="dropdown">
+                <a href="#">MORE <i class="fa fa-caret-down"></i></a>                   
+                <div class="dropdown-list">
+                    <a href="#">Merchandise</a>
+                    <a href="#">Extras</a>
+                    <a href="#">Media</a>
+                </div>
+            </li>
+        </ul>
+    </header>    
+    <main>
+        <!--Banner bannershow-->
+        <div id="home" class="slideshow-container">
+                <div class="banner fade">
+                    <img src="images/a7x_helsinki.jpg" alt="a7x_helsinki"/>
+                    <p class="caption-text">Thank you Helsinki!</p>
+                </div>
+                <div class="banner fade">
+                    <img src="images/a7x_london.jpg" alt="a7x_london"/>
+                    <p class="caption-text">Thank you London!</p>
+                </div>
+                <div class="banner fade">
+                    <img src="images/a7x_dussel.jpg" alt="a7x_Dusseldorf"/>
+                    <p class="caption-text">Thank you Dusseldorf!</p>
+                </div>
+                <div class="banner fade">
+                    <img src="images/a7x_cali.jpg" alt="a7x_california"/>
+                    <p class="caption-text">Thank you California!</p>
+                </div>
+            </div>     
+        <!--Band Info-->
+        <div id="band" class="band-info">
+                <h2>THE BAND</h2>
+                <span>We love music</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi consequatur cumque cum neque soluta, deserunt ratione obcaecati veritatis quam officiis omnis, aspernatur itaque recusandae maiores qui tempore? Dolores, quod deserunt! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore cum quod temporibus rem illum adipisci, quibusdam aliquid. Sed molestiae similique quod nisi, perferendis illum repellat enim magnam ex iusto saepe?</p>
+                <figure>
+                    <figcaption>Brooks Wackerman</figcaption>
+                    <img src="images/brooks.jpg" alt="Brooks">
+                </figure>
+                <figure>
+                    <figcaption>Johnny Christ</figcaption>
+                    <img src="images/johnny.jpg" alt="Johnny">
+                </figure>
+                <figure>
+                    <figcaption>M Shadows</figcaption>
+                    <img src="images/mshadow.jpg" alt="Mshadows">
+                </figure>
+                <figure>
+                    <figcaption>Synyster Gates</figcaption>
+                    <img src="images/synyster.jpg" alt="Synyster">
+                </figure>
+                <figure>
+                    <figcaption>Zacky Vengeance</figcaption>
+                    <img src="images/zacky.jpg" alt="Zacky">
+                </figure>
+            </div>
+        <!--Tour Dates-->
+        <div id="tour" class="tour-date">
+                <h2>TOUR DATES</h2>
+                <span>Remember to book your tickets!</span>
+                <div class="tour-container">
+    
+                    <div class="tour-card">
+                        <figure>
+                            <img src="images/newyork.jpg" alt="newyork">
+                            <figcaption><strong>New York</strong></figcaption>
+                        </figure>
+                        <span>15 January 2018</span>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                        <button class="buy-btn">Buy Tickets</button>
+                    </div>
+                    <div class="tour-card">
+                        <figure>
+                            <img src="images/tokyo.jpg" alt="tokyo">
+                            <figcaption><strong>Tokyo</strong></figcaption>
+                        </figure>
+                        <span>10 February 2018</span>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                        <button class="buy-btn">Buy Tickets</button>
+                    </div>
+                    <div class="tour-card">
+                        <figure>
+                            <img src="images/berlin.jpg" alt="berlin">
+                            <figcaption><strong>Berlin</strong></figcaption>
+                        </figure>
+                        <span>25 March 2018</span>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                        <button class="buy-btn">Buy Tickets</button>
+                    </div>
+                </div>
+            </div>
+        <!--Ticket Modal-->
+        <div id="myTicketBox" class="ticket-box">
+            <div class="buy-ticket">
+                <div class="ticket-banner">
+                    <span class="close">&times;</span>
+                    <h2><i class="fas fa-ticket-alt" style="color: white"></i> Tickets</h2>                   
+                </div>
+                <div class="ticket-info">
+                    <label for="ticket"><i class="fas fa-shopping-cart" style="color: black"></i>  Tickets, $60 per person</label>
+                    <input type="number" placeholder="1" name="ticket"/>
+                    <label for="email"><i class="fas fa-user" style="color: black"></i>  Send To</label>
+                    <input type="email" placeholder="john.doe@email.com" name="email"/>
+                    <button>PAY  <i class="fas fa-check"></i></button>
+                </div>
+                <div class="ticket-bottom">
+                    <button class="close">Close <i class="fas fa-times"></i></button>
+                    <p>Need <a href="#">help?</a></p>
+                </div>
+            </div>
+        </div>
+        <!--Contact-->
+        <div id="contacts" class="contact">
+            <h2>CONTACT</h2>
+            <span>Fan? Drop a note!</span>
+            <div class="info-message">
+                <div class="address">
+                    <p><i class="fas fa-map-marker-alt"></i>  California, United States</p><br/>
+                    <p><i class="fas fa-phone"></i>  Phone: +12345678</p><br/>
+                    <p><i class="fas fa-envelope"></i>  Email: mail@email.com</p><br/>
+                </div>
+                <div class="message">
+                    <div>
+                        <input type="text" placeholder="Name"/>
+                        <input type="text" placeholder="Email"/>
+                        <input type="text" placeholder="Message"/>
+                    </div>                 
+                    <button>SEND</button>
+                </div>   
+            </div>
+        </div>
+        <!--Map-->
+        <div class="map">
+            <div id="google-map"></div>
+        </div>
+    </main>
+    <!--Social Network-->
+    <footer>
+        <div class="social-network">
+            <span><i class="fab fa-facebook"></i></span>
+            <span><i class="fab fa-instagram"></i></span>
+            <span><i class="fab fa-snapchat"></i></span>
+            <span><i class="fab fa-pinterest"></i></span>
+            <span><i class="fab fa-twitter"></i></span>
+            <span><i class="fab fa-linkedin-in"></i></span>
+            <p>&copy; Hang Le, 2018</p>
+            <p><i>Content Disclaimer: The content of this website is only for personal practice, not for any commercials. </i></p>
+        </div>
+    </footer>
+    <script src="band.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCVMCGVSpla-xYZDoeJ1sn3MKHVOE40Onk&callback=initMap"
+    async defer></script>
+   
+</body>
+</html>

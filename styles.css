@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+:root{
+    --theme-color: #060607;
+    --title-color: white;
+    --grey-color: #afb9c5; 
+    --ticket-color: #007f9f;
+}
+*{
+    margin: 0;
+    padding: 0; 
+    font-family: 'Lato', sans-serif;   
+}
+/*Navigation*/
+ul{
+    display: block;
+    background: var(--theme-color);
+    list-style-type: none;
+    position: fixed;
+    top: 0;
+    width: 100%; 
+    z-index: 1; 
+}
+li{
+    float: left;
+}
+li a{
+    color: var(--title-color);
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 1rem;
+}
+i{
+    color: var(--title-color);
+}
+
+li a:hover, li a:hover > i{
+    background: var(--grey-color);;
+    color: var(--theme-color);
+}
+
+.dropdown-list{
+    position: absolute;   
+    display: none;
+    background: var(--theme-color);
+    z-index: 1;  
+}   
+.dropdown-list a{
+    display: block;
+    text-align: left;
+    padding-right: 1.5rem;
+}
+.dropdown:hover .dropdown-list{
+    display: block;
+}
+/*Slideshow*/
+ul::after,.slideshow-container::after,.tour-container::after, .tour-card::after, .tour-date::after, .ticket-box::after, .ticket-banner::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+.slideshow-container{
+    background: #111f28;
+    text-align: center;
+    margin-top: 3rem;
+    position: relative;
+}
+.caption-text{    
+    left: 0;    
+    right: 0;
+    bottom: 0.5rem;
+    margin: auto;
+    color: var(--title-color);
+    font-size: 1.3rem;
+    padding: 1rem;
+    position: absolute;    
+    text-align: center;  
+}
+/*The Band*/
+.band-info{
+    padding: 5rem 8rem;
+    text-align: center;
+}
+.band-info p {
+    text-align: left;
+}
+.band-info span{
+    display: block;
+    margin: 2rem;
+    font-style: italic;
+}
+.band-info figure{
+    display: inline-block;
+    margin-top: 3rem;
+    padding: 0.3rem;
+}
+.band-info img{
+    margin-top: 1.5rem;
+    border-radius: 5px;
+}
+.band-info figcaption{
+    font-size: 0.8rem;
+}
+/*Tour Dates*/
+.tour-date{
+    background: var(--theme-color);
+    text-align: center;
+    color: var(--title-color);
+    padding: 5rem 8rem;
+}
+.tour-date span{
+    display: block;
+    margin: 2rem;
+    font-style: italic;
+}
+
+.tour-card{    
+    width: 20%;
+    display: inline-block;
+    background: var(--title-color);
+    color: var(--theme-color);
+    padding: 0;
+    margin: 0.5rem;   
+}
+.tour-card img{
+    width: 100%;
+}
+.tour-card img:hover{
+    opacity: 0.7;
+}
+.tour-card figcaption, .tour-card span, .tour-card p, .tour-card button{
+    font-style: normal;
+    margin: 1rem;
+    text-align: left;
+}
+.tour-card button{
+    float: left;
+    padding: 0.5rem 1rem;
+    background: var(--theme-color);
+    color: var(--title-color);
+    border: 0;
+}
+.tour-card button:hover{
+    background: var(--grey-color);
+    color: var(--theme-color);
+}
+/*Buy Ticket*/
+.ticket-box{
+    display: none;
+    position: fixed;
+    z-index: 1; 
+    padding-top: 100px; 
+    background: rgba(0,0,0,0.5);;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.buy-ticket{ 
+    margin: auto;    
+    width: 70%;    
+    background: var(--title-color);   
+}
+.ticket-banner{
+    background: var(--ticket-color);
+    text-align: center;
+    color: var(--title-color);
+}
+.ticket-banner h2{
+    display: inline-block;
+    margin-bottom: 3rem;
+    margin-top: 3rem;  
+}
+span.close{
+    display: block;
+    color: var(--title-color);
+    margin-top: 0;   
+    float: right;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 0.5rem;
+    margin-bottom: 5rem;
+}
+span.close:hover,
+span.close:focus {
+    color: var(--theme-color);
+    background: var(--grey-color);   
+    cursor: pointer;
+}
+.ticket-info, .ticket-bottom{
+    padding: 1rem;
+}
+.ticket-info input, label{
+    display: block;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+.ticket-info input{
+    padding: 0.3rem;
+}
+.ticket-info button{
+    width: 100%;
+    padding: 1.5rem;
+    background: var(--ticket-color);
+    color: var(--title-color);
+    border: 0;
+}
+.ticket-bottom button, p{
+    display: inline-block;
+}
+.ticket-bottom button{
+    background: red;
+    padding: 0.8rem;
+    color: var(--title-color);
+    border: 0;
+}
+.ticket-bottom p{
+    float: right;
+}
+.ticket-bottom a{
+    color: var(--ticket-color);
+}
+/*Contact*/
+.contact{
+    padding: 5rem 8rem;
+    text-align: center;
+}
+.contact span{
+    display: block;
+    margin: 2rem;
+    font-style: italic;
+}
+.info-message{
+    width: 70%;
+    margin: auto;
+}
+.address, .message{
+    display: inline-block;    
+}
+.info-message::after, .address::after, .message::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+.address{
+    text-align: left;
+    line-height: 2rem;
+    float: left;
+    width: 30%;
+    padding-left: 1rem;
+}
+.address i{
+    color: var(--theme-color);
+}
+.message{
+    text-align: right;
+    float: right;
+    width: 60%;
+}
+.message input{
+    padding: 0.5rem;
+}
+input[placeholder="Name"], input[placeholder="Email"]{
+    width: 45%;
+}
+input[placeholder="Message"]{
+    width: 91%;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+.message button{
+    padding: 0.5rem 1rem;
+    background: var(--theme-color);
+    color: var(--title-color);
+    border: 0;
+}
+/*Google Map*/
+#google-map{
+    width: 100%;
+    height: 30rem;
+    color: black;
+}
+
+/*Social network*/
+.social-network{
+    padding: 5rem 8rem;
+    text-align: center;
+}
+.social-network i{
+    color: #484e52;
+    font-size: 1.5rem;
+}
+.social-network p{
+    display: block;
+    margin-top: 1rem;
+    color: #484e52;
+}
